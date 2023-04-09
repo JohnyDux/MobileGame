@@ -6,7 +6,7 @@ public class BuildingZone : MonoBehaviour
 {
     public int bricksPerRow = 5;
     public float brickSpacing = 1f;
-    public GameObject brickPrefab;
+    public BoxCollider2D brickPrefab;
 
     public int bricksInZone = 0;
 
@@ -19,6 +19,8 @@ public class BuildingZone : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        brickPrefab.isTrigger = false;
+
         if (other.gameObject.CompareTag("Player"))
         {
             // Calculate the number of rows and columns needed to place all the bricks

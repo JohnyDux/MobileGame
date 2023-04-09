@@ -282,7 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bricksPerRow: 5
   brickSpacing: 0.1
-  brickPrefab: {fileID: 5694379604834977164, guid: 5be4c58a75a2b534fa091d1e0e4751ec, type: 3}
+  brickPrefab: {fileID: 5694379604834977160, guid: 5be4c58a75a2b534fa091d1e0e4751ec, type: 3}
   bricksInZone: 0
 --- !u!61 &53194842
 BoxCollider2D:
