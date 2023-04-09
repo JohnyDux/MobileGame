@@ -28,7 +28,7 @@ public class BuildingZone : MonoBehaviour
             // Calculate the starting position for the first brick
             float startX = transform.position.x - ((numCols - 1) * brickSpacing * 0.5f);
             float startY = transform.position.y + ((numRows - 1) * brickSpacing * 0.5f);
-            Vector2 currentPos = new Vector2(startX, startY);
+            Vector2 currentPos = new Vector2(startX, startY+50);
 
             // Instantiate the bricks and place them side by side
             for (int i = 0; i < script_ref.brickCount; i++)
@@ -45,6 +45,8 @@ public class BuildingZone : MonoBehaviour
 
             // Reset the brick count for the next building zone
             bricksInZone = 0;
+
+            script_ref.brickCount = 0;
         }
     }
 
