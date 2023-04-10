@@ -45,6 +45,8 @@ public class BuildingZone : MonoBehaviour
                 }
             }
 
+            brickPrefab.gameObject.layer = 3;
+
             // Reset the brick count for the next building zone
             bricksInZone = 0;
 
