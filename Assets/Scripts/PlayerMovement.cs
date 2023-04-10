@@ -14,6 +14,13 @@ public class PlayerMovement : MonoBehaviour
 
     public int brickCount = 0;
 
+    public bool Pause = false;
+    public GameObject PauseMenu;
+
+    void Start()
+    {
+        PauseMenu.SetActive(false);
+    }
 
     void Update()
     {
@@ -28,6 +35,19 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             crouch = true;
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            if(Pause == false)
+            {
+                PauseGame();
+            }  
+
+            else
+            {
+                ResumeGame();
+            }
         }
     }
 
@@ -47,5 +67,21 @@ public class PlayerMovement : MonoBehaviour
             brickCount=brickCount+1;
             Destroy(other.gameObject);
         }
+    }
+
+    void PauseGame()
+    {
+        Time.timeScale = 0f;
+        Debug.Log("Set Pause");
+        Pause = true;
+        PauseMenu.SetActive(true);
+    }
+
+    void ResumeGame()
+    {
+        Time.timeScale = 1.0f;
+        Debug.Log("Set Resume");
+        Pause = false;
+        PauseMenu.SetActive(false);
     }
 }

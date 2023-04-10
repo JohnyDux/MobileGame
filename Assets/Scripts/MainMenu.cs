@@ -5,9 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject Canvas;
     public void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void ResumeGame()
+    {
+        Time.timeScale = 1.0f;
+        Canvas.SetActive(false);
     }
 
     public void LoadMainMenu()
