@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class RedLineTrigger : MonoBehaviour
 {
-    public Canvas WinCanvas;
+    public GameObject WinCanvas;
     void Start()
     {
-        WinCanvas.enabled = false;
+        WinCanvas.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Brick" )
         {
-            WinCanvas.enabled = true;
+            WinCanvas.SetActive(true);
             Time.timeScale = 0.0f;
         }
     }
