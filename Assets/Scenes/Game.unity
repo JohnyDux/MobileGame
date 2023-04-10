@@ -1714,6 +1714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WinCanvas: {fileID: 258719993}
+  BrickNum: {fileID: 56698523}
+  BrickImage: {fileID: 95132482}
 --- !u!1 &1469761928
 GameObject:
   m_ObjectHideFlags: 0
