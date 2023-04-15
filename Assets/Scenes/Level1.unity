@@ -358,7 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bricksPerRow: 5
   brickSpacing: 0.1
-  brickPrefab: {fileID: 5694379604834977160, guid: 5be4c58a75a2b534fa091d1e0e4751ec, type: 3}
+  brickPrefab: {fileID: 5694379604834977160, guid: 2c21950b63efc4146b8babac23d0b46c, type: 3}
   bricksInZone: 0
 --- !u!61 &53194842
 BoxCollider2D:
@@ -3385,7 +3385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_JumpForce: 10000
   m_CrouchSpeed: 0.4
-  m_MovementSmoothing: 0.05
+  m_MovementSmoothing: 0
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
