@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Brick
+  - Estalactite
+  - Construction_Brick
   layers:
   - Default
   - TransparentFX

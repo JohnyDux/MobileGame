@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     public bool Pause = false;
     public GameObject PauseMenu;
 
+    public Collider2D boxCollider;
+    public Collider2D circleCollider;
+
     void Start()
     {
         PauseMenu.SetActive(false);
@@ -66,6 +69,21 @@ public class PlayerMovement : MonoBehaviour
             // Add the brick to the player's count and destroy the brick GameObject
             brickCount=brickCount+1;
             Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Construction_Brick"))
+        {
+            boxCollider.isTrigger = true;
+            circleCollider.isTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Construction_Brick"))
+        {
+            boxCollider.isTrigger = false;
+            circleCollider.isTrigger = false;
         }
     }
 
