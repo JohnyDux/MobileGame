@@ -90,6 +90,7 @@ public class PlayerController : MonoBehaviour
 
 				// Reduce the speed by the crouchSpeed multiplier
 				move *= m_CrouchSpeed;
+				m_Rigidbody2D.AddForce(new Vector2(0f, -m_JumpForce - 8f));
 
 				// Disable one of the colliders when crouching
 				if (m_CrouchDisableCollider != null)

@@ -12,18 +12,21 @@ public class BarrierKill : MonoBehaviour
         spriteTexture = GetComponent<SpriteRenderer>();
         spriteTexture.sprite = brick;
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Number_Collisions=Number_Collisions+1;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Number_Collisions = Number_Collisions + 1;
 
-        if (Number_Collisions > 2)
+            if (Number_Collisions > 4)
             {
                 Destroy(gameObject);
             }
 
-        if(Number_Collisions > 1)
-        {
-            spriteTexture.sprite = damagedBrick;
+            if (Number_Collisions > 2)
+            {
+                spriteTexture.sprite = damagedBrick;
+            }
         }
     }
 }

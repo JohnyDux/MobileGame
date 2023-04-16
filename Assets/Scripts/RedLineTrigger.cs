@@ -16,7 +16,7 @@ public class RedLineTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Brick" )
+        if(collision.gameObject.tag == "Construction_Brick" )
         {
             BrickImage.SetActive(false);
             BrickNum.SetActive(false);

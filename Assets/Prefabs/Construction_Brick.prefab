@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5694379604834977166}
   - component: {fileID: 5694379604834977165}
   - component: {fileID: 5694379604834977167}
-  - component: {fileID: 5694379604834977160}
+  - component: {fileID: 669296220024780989}
   m_Layer: 3
   m_Name: Construction_Brick
   m_TagString: Construction_Brick
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 1
---- !u!61 &5694379604834977160
+--- !u!61 &669296220024780989
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

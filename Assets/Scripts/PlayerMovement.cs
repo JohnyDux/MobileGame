@@ -19,10 +19,12 @@ public class PlayerMovement : MonoBehaviour
 
     public Collider2D boxCollider;
     public Collider2D circleCollider;
+    Animator animator;
 
     void Start()
     {
         PauseMenu.SetActive(false);
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -33,11 +35,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             jump = true;
+            animator.SetBool("IsCrouch", false);
         }
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
             crouch = true;
+            animator.SetBool("IsCrouch", true);
         }
 
         if (Input.GetKey(KeyCode.Escape))
@@ -60,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
         crouch = false;
+        animator.SetBool("IsCrouch", false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -72,6 +77,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("Construction_Brick"))
+        {
+            boxCollider.isTrigger = true;
+            circleCollider.isTrigger = true;
+        }
+
+        if (other.gameObject.CompareTag("Cement"))
         {
             boxCollider.isTrigger = true;
             circleCollider.isTrigger = true;

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0364c80635b1f574eb6b1da127d8abb0
+guid: cb0f4861b12c99247ac9754b580daad9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,8 +36,8 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Character_Idle_Animation 1_0
+      name: Character_Idle_Animation_0
       rect:
         serializedVersion: 2
         x: 40
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cfb7158ce09b1142bb6a7773bc19ef2
-      internalID: -592110181
+      spriteID: 8cfb8eed9f374f444bfc252ad11cece4
+      internalID: 573426184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Idle_Animation 1_1
+      name: Character_Idle_Animation_1
       rect:
         serializedVersion: 2
         x: 200
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7863b027c2d944e4cb1e1d8ff85aab52
-      internalID: 944544196
+      spriteID: 227740b08d5a3db43adf7fa61c78c0dd
+      internalID: 1884752324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Idle_Animation 1_2
+      name: Character_Idle_Animation_2
       rect:
         serializedVersion: 2
         x: 40
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dea9689ad44a2cc499790fd606b69d96
-      internalID: 179056489
+      spriteID: 31c4492f3d2724b4ba447d6f426ae5bc
+      internalID: 174581335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Idle_Animation 1_3
+      name: Character_Idle_Animation_3
       rect:
         serializedVersion: 2
         x: 200
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c90b29990879297439cc9b2b7c16186c
-      internalID: 181675620
+      spriteID: 0de1e3d7b7eb6a3429f6c1347dc01ef9
+      internalID: 870401422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Character_Idle_Animation 1_4
+      name: Character_Idle_Animation_4
       rect:
         serializedVersion: 2
         x: 40
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 379ac67c1c4b2eb47b59effe5de3d371
-      internalID: -2094145728
+      spriteID: 598d74aff55025544a8653f357b53716
+      internalID: -1996316065
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 7009d072bc4aa6548ad66d2b35c5a76c
     internalID: 0
     vertices: []
     indices: 
@@ -220,11 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Character_Idle_Animation 1_0: -592110181
-      Character_Idle_Animation 1_1: 944544196
-      Character_Idle_Animation 1_2: 179056489
-      Character_Idle_Animation 1_3: 181675620
-      Character_Idle_Animation 1_4: -2094145728
+      Character_Idle_Animation_0: 573426184
+      Character_Idle_Animation_1: 1884752324
+      Character_Idle_Animation_2: 174581335
+      Character_Idle_Animation_3: 870401422
+      Character_Idle_Animation_4: -1996316065
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
