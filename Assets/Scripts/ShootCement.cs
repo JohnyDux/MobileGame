@@ -4,23 +4,39 @@ using UnityEngine;
 
 public class ShootCement : MonoBehaviour
 {
+
+    public GameObject bullet;
+    public Transform firePoint;
+    public float bulletSpeed = 50;
+
     PlayerMovement player;
+    PlayerController facingRight;
+
+    public Vector2 lookDirection;
+    float lookAngle;
+
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        facingRight = GameObject.Find("Player").GetComponent<PlayerController>();
     }
+
     void Update()
     {
-        if (player.cementCount > 0)
+        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+
+        firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
+
+        if (Input.GetMouseButtonDown(0) && facingRight.m_FacingRight && player.cementCount > 0)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Shoot();
-            }
+            GameObject bulletClone = Instantiate(bullet);
+            bulletClone.transform.position = firePoint.position;
+            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+
+            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+
+            player.cementCount = player.cementCount - 10;
         }
-    }
-    void Shoot()
-    {
-        player.cementCount = player.cementCount - 10;
     }
 }
