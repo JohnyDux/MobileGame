@@ -15,6 +15,8 @@ public class ShootCement : MonoBehaviour
     public Vector2 lookDirection;
     float lookAngle;
 
+    GameObject bulletClone;
+
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
@@ -30,11 +32,22 @@ public class ShootCement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && facingRight.m_FacingRight && player.cementCount > 0)
         {
-            GameObject bulletClone = Instantiate(bullet);
+            bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;
             bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
 
             bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
+
+            player.cementCount = player.cementCount - 10;
+        }
+
+        if (Input.GetMouseButtonDown(0) && !facingRight.m_FacingRight && player.cementCount > 0)
+        {
+            bulletClone = Instantiate(bullet);
+            bulletClone.transform.position = firePoint.position;
+            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
+
+            bulletClone.GetComponent<Rigidbody2D>().velocity = -firePoint.right * bulletSpeed;
 
             player.cementCount = player.cementCount - 10;
         }
