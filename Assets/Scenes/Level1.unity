@@ -2510,6 +2510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc26ac1c8e5400a468d8dc97d8da0589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CementSpawn: {fileID: 2158029920646582694, guid: a086ee22f79f90e4d864be4b680eda15, type: 3}
 --- !u!1 &1139795714
 GameObject:
   m_ObjectHideFlags: 0
@@ -4691,7 +4692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brickPrefab: {fileID: 917093168}
-  cementPrefab: {fileID: 601610014036074873, guid: 8ea92ca91f12b9341a366467943e1a29, type: 3}
+  cementPrefab: {fileID: 2158029920646582694, guid: 3676f76adc229214e93f8e624689a335, type: 3}
   BrickSpawnInterval: 2
   CementSpawnInterval: 5
   minX: 340

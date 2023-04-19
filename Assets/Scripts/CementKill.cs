@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class CementKill : MonoBehaviour
 {
+    public GameObject CementSpawn;
+    Vector2 SpawnHere;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Cement(Clone)")
+        if (collision.tag == "Cement")
         {
+            SpawnHere = new Vector2(collision.transform.position.x, collision.transform.position.y);
+            Instantiate(CementSpawn, SpawnHere, collision.transform.rotation);
             Destroy(collision.gameObject);
+
+            Debug.Log("Cimento Hit");
         }
     }
 }
