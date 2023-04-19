@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     public int brickCount = 0;
 
-    public int cementCount = 0;
+    public int cementCount;
 
     public bool Pause = false;
     public GameObject PauseMenu;
@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PauseMenu.SetActive(false);
         animator = GetComponent<Animator>();
+        cementCount = 100;
     }
 
     void Update()
@@ -88,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
-            cementCount = cementCount + 5;
+            cementCount = cementCount + 10;
             Destroy(other.gameObject);
         }
     }

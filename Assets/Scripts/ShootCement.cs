@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class ShootCement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    PlayerMovement player;
     void Start()
     {
-        
+        player = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (player.cementCount > 0)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Shoot();
+            }
+        }
+    }
+    void Shoot()
+    {
+        player.cementCount = player.cementCount - 10;
     }
 }
