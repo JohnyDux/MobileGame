@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class PrintValuesOnScreen : MonoBehaviour
 {
     public TextMeshProUGUI BrickNum;
-    PlayerMovement playerNumBricks;
+    public Slider CementNum;
+    PlayerMovement player;
 
     void Start()
     {
-        playerNumBricks = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     void Update()
     {
-        BrickNum.text = playerNumBricks.brickCount.ToString() + "x";
+        BrickNum.text = player.brickCount.ToString() + "x";
+        CementNum.value = player.cementCount;
     }
 }

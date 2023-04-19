@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 601610014036074872}
   - component: {fileID: -2680155113181774161}
   - component: {fileID: 9081388193885162979}
-  - component: {fileID: 439219092292332290}
   m_Layer: 3
   m_Name: Cement
   m_TagString: Cement
@@ -134,15 +133,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
---- !u!114 &439219092292332290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601610014036074873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c0a00e1937f3e40933c32166001089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

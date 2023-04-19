@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     public int brickCount = 0;
 
+    public int cementCount = 0;
+
     public bool Pause = false;
     public GameObject PauseMenu;
 
@@ -84,14 +86,21 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Cement"))
         {
-            boxCollider.isTrigger = true;
-            circleCollider.isTrigger = true;
+            boxCollider.isTrigger = false;
+            circleCollider.isTrigger = false;
+            cementCount = cementCount + 5;
+            Destroy(other.gameObject);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Construction_Brick"))
+        {
+            boxCollider.isTrigger = false;
+            circleCollider.isTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Cement"))
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
