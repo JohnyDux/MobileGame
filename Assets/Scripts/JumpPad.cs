@@ -11,7 +11,6 @@ public class JumpPad : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player Hit");
             player.AddForce(Vector2.up * bounce * 100, ForceMode2D.Impulse);
         }
     }
