@@ -8,6 +8,7 @@ TagManager:
   - Estalactite
   - Construction_Brick
   - Cement
+  - Sand
   layers:
   - Default
   - TransparentFX
