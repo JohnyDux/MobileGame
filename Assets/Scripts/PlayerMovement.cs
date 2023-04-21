@@ -109,8 +109,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Faucet"))
         {
-            Debug.Log("Faucet Hit");
             waterCount = waterCount + faucet.waterIncrement;
+        }
+
+        if (other.gameObject.CompareTag("Betoneira"))
+        {
+            if(waterCount > 0 && sandCount > 0)
+            {
+                cementCount = cementCount + 10;
+                waterCount = 0;
+                sandCount = 0;
+            }
         }
     }
 
