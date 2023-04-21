@@ -121,6 +121,14 @@ public class PlayerMovement : MonoBehaviour
                 sandCount = 0;
             }
         }
+
+        if (other.gameObject.CompareTag("Brick_Mold"))
+        {
+            if(cementCount > 3)
+            {
+                brickCount++;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

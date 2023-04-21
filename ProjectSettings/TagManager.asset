@@ -11,6 +11,7 @@ TagManager:
   - Sand
   - Faucet
   - Betoneira
+  - Brick_Mold
   layers:
   - Default
   - TransparentFX
