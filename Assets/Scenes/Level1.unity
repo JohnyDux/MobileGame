@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 53194840}
   - component: {fileID: 53194841}
   - component: {fileID: 53194842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Building_Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

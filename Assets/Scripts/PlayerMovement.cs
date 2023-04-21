@@ -127,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
             if(cementCount > 3)
             {
                 brickCount++;
+                cementCount = 0;
             }
         }
     }
