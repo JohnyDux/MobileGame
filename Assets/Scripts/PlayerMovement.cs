@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerController controller;
 
+    public Faucet faucet;
+
     public float runSpeed = 40f;
 
     float horizontalMove = 0f;
@@ -15,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public int brickCount = 0;
 
     public int cementCount;
+    public int sandCount;
+    public int waterCount;
 
     public bool Pause = false;
     public GameObject PauseMenu;
@@ -27,7 +31,9 @@ public class PlayerMovement : MonoBehaviour
     {
         PauseMenu.SetActive(false);
         animator = GetComponent<Animator>();
-        cementCount = 100;
+        cementCount = 0;
+        sandCount = 0;
+        waterCount = 0;
     }
 
     void Update()
@@ -92,6 +98,20 @@ public class PlayerMovement : MonoBehaviour
             cementCount = cementCount + 10;
             Destroy(other.gameObject);
         }
+
+        if (other.gameObject.CompareTag("Sand"))
+        {
+            boxCollider.isTrigger = false;
+            circleCollider.isTrigger = false;
+            sandCount = sandCount + 10;
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Faucet"))
+        {
+            Debug.Log("Faucet Hit");
+            waterCount = waterCount + faucet.waterIncrement;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -105,6 +125,15 @@ public class PlayerMovement : MonoBehaviour
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Sand"))
+        {
+            boxCollider.isTrigger = false;
+            circleCollider.isTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Faucet"))
+        {
+            boxCollider.isTrigger = false;
         }
     }
 

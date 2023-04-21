@@ -8,6 +8,8 @@ public class PrintValuesOnScreen : MonoBehaviour
 {
     public TextMeshProUGUI BrickNum;
     public Slider CementNum;
+    public Slider SandNum;
+    public Slider WaterNum;
     PlayerMovement player;
 
     void Start()
@@ -19,5 +21,7 @@ public class PrintValuesOnScreen : MonoBehaviour
     {
         BrickNum.text = player.brickCount.ToString() + "x";
         CementNum.value = player.cementCount;
+        SandNum.value = player.sandCount;
+        WaterNum.value = player.waterCount;
     }
 }

@@ -41,7 +41,7 @@ public class ShootCement : MonoBehaviour
             player.cementCount = player.cementCount - 10;
         }
 
-        if (Input.GetMouseButtonDown(0) && !facingRight.m_FacingRight && player.cementCount > 0)
+        if (Input.GetMouseButtonDown(0) && !facingRight.m_FacingRight && (player.cementCount > 0))
         {
             bulletClone = Instantiate(bullet);
             bulletClone.transform.position = firePoint.position;

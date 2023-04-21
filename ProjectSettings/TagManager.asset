@@ -9,6 +9,7 @@ TagManager:
   - Construction_Brick
   - Cement
   - Sand
+  - Faucet
   layers:
   - Default
   - TransparentFX
