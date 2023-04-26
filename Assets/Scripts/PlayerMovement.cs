@@ -44,11 +44,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             jump = true;
+            crouch = false;
             animator.SetBool("IsCrouch", false);
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.S))
         {
+            jump = false;
             crouch = true;
             animator.SetBool("IsCrouch", true);
         }
