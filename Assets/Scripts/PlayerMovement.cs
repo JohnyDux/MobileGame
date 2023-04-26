@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,9 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     public int brickCount = 0;
 
-    public int cementCount;
-    public int sandCount;
-    public int waterCount;
+    [Range(0f, 100f)] public float cementCount;
+    [Range(0f, 100f)] public float sandCount;
+    [Range(0f, 100f)] public float waterCount;
 
     public bool Pause = false;
     public GameObject PauseMenu;
@@ -97,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
-            cementCount = cementCount + 10;
+            cementCount = cementCount + 10f;
             Destroy(other.gameObject);
         }
 
@@ -105,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
-            sandCount = sandCount + 10;
+            sandCount = sandCount + 10f;
             Destroy(other.gameObject);
         }
 
@@ -118,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(waterCount > 0 && sandCount > 0)
             {
-                cementCount = cementCount + 10;
+                cementCount = cementCount + 10f;
                 waterCount = 0;
                 sandCount = 0;
             }
