@@ -6,10 +6,15 @@ public class ArchitectAttack : MonoBehaviour
 {
     public int TimesHitPlayer;
     public Animator anim;
+    public PlayerMovement player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            player.brickCount = 0;
+            player.cementCount = 0;
+            player.sandCount = 0;
+            player.waterCount = 0;
             TimesHitPlayer+=1;
             anim.SetBool("Attack", true);
         }
