@@ -12,6 +12,7 @@ TagManager:
   - Faucet
   - Betoneira
   - Brick_Mold
+  - Architect
   layers:
   - Default
   - TransparentFX

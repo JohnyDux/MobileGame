@@ -133,6 +133,14 @@ public class PlayerMovement : MonoBehaviour
                 cementCount = 0;
             }
         }
+
+        if (other.gameObject.CompareTag("Architect"))
+        {
+            brickCount = 0;
+            cementCount = 0;
+            sandCount = 0;
+            waterCount = 0;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
