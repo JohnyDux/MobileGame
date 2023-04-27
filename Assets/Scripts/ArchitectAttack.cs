@@ -11,10 +11,10 @@ public class ArchitectAttack : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.brickCount = 0;
-            player.cementCount = 0;
-            player.sandCount = 0;
-            player.waterCount = 0;
+            player.brickCount = player.brickCount - 2;
+            player.cementCount = player.cementCount - 25;
+            player.sandCount = player.sandCount - 25;
+            player.waterCount = player.waterCount -25;
             TimesHitPlayer+=1;
             anim.SetBool("Attack", true);
         }

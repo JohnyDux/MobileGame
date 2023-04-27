@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 98ac0bdb7171eed44bbceeb67c3eb1f0
+guid: 43d5e6869b9ab3543810ad9cc8206450
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,106 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Architect_Idle_Animation_0
+      name: Character_Jump_Animation_0
       rect:
         serializedVersion: 2
-        x: 45
+        x: 40
+        y: 335
+        width: 75
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7276d8774bbc754491b6db1788c9e13
+      internalID: 1237375910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Jump_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 200
         y: 335
         width: 75
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49c088617e4af5e478962afb4b9461a4
-      internalID: 1657847476
+      spriteID: af175259c15fb2f498a385aff8431746
+      internalID: 1955525596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_1
+      name: Character_Jump_Animation_2
       rect:
         serializedVersion: 2
-        x: 205
-        y: 335
-        width: 75
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: baebf7b02172f22419fc6bb940f6e255
-      internalID: 1626402412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Architect_Idle_Animation_2
-      rect:
-        serializedVersion: 2
-        x: 44
+        x: 40
         y: 175
         width: 75
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab7c8cc6f701d748bf32415e0d9d924
-      internalID: 501761943
+      spriteID: 0c4cfb65b422f4e41a94b49423d77702
+      internalID: 699913060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_3
+      name: Character_Jump_Animation_3
       rect:
         serializedVersion: 2
-        x: 205
+        x: 200
         y: 175
         width: 75
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1481ec9315c4354f8a0cd04e1845dd1
-      internalID: -1545072419
+      spriteID: c3710e224bfb5084b9a806f91dfaa3fb
+      internalID: 1442088886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_4
+      name: Character_Jump_Animation_4
       rect:
         serializedVersion: 2
-        x: 45
-        y: 15
-        width: 75
-        height: 130
+        x: 30
+        y: 10
+        width: 105
+        height: 140
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128c5b1438dd19d47b81db51564e6439
-      internalID: 432216328
+      spriteID: 14c6f9ae0a4da6348a480700481de3f3
+      internalID: 782991145
       vertices: []
       indices: 
       edges: []
@@ -220,11 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Architect_Idle_Animation_0: 1657847476
-      Architect_Idle_Animation_1: 1626402412
-      Architect_Idle_Animation_2: 501761943
-      Architect_Idle_Animation_3: -1545072419
-      Architect_Idle_Animation_4: 432216328
+      Character_Jump_Animation_0: 1237375910
+      Character_Jump_Animation_1: 1955525596
+      Character_Jump_Animation_2: 699913060
+      Character_Jump_Animation_3: 1442088886
+      Character_Jump_Animation_4: 782991145
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

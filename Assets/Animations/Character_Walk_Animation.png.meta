@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 98ac0bdb7171eed44bbceeb67c3eb1f0
+guid: d8ca16f3900f38b43b1a039fc624a7c2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,106 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Architect_Idle_Animation_0
+      name: Character_Walk_Animation_0
       rect:
         serializedVersion: 2
-        x: 45
+        x: 40
         y: 335
         width: 75
-        height: 130
+        height: 135
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49c088617e4af5e478962afb4b9461a4
-      internalID: 1657847476
+      spriteID: 8fad420aa255da942a3f87cc3c1124a0
+      internalID: 1615896907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_1
+      name: Character_Walk_Animation_1
       rect:
         serializedVersion: 2
-        x: 205
+        x: 200
         y: 335
-        width: 75
+        width: 100
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baebf7b02172f22419fc6bb940f6e255
-      internalID: 1626402412
+      spriteID: c0516e4ee106103448d1d3ca7962c061
+      internalID: -1232809711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_2
+      name: Character_Walk_Animation_2
       rect:
         serializedVersion: 2
-        x: 44
+        x: 40
         y: 175
-        width: 75
+        width: 105
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bab7c8cc6f701d748bf32415e0d9d924
-      internalID: 501761943
+      spriteID: 75eb0161bbdfba04dbef5adf4b35bfb6
+      internalID: -729115395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_3
+      name: Character_Walk_Animation_3
       rect:
         serializedVersion: 2
-        x: 205
+        x: 200
         y: 175
-        width: 75
+        width: 100
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1481ec9315c4354f8a0cd04e1845dd1
-      internalID: -1545072419
+      spriteID: 7a4832e3857be4744a0bb744eb7bd030
+      internalID: -1258927815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Architect_Idle_Animation_4
+      name: Character_Walk_Animation_4
       rect:
         serializedVersion: 2
-        x: 45
+        x: 40
         y: 15
         width: 75
         height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128c5b1438dd19d47b81db51564e6439
-      internalID: 432216328
+      spriteID: 4c979c8e53904fc4bb9a6f7cbbb7bac2
+      internalID: 195403205
       vertices: []
       indices: 
       edges: []
@@ -220,11 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Architect_Idle_Animation_0: 1657847476
-      Architect_Idle_Animation_1: 1626402412
-      Architect_Idle_Animation_2: 501761943
-      Architect_Idle_Animation_3: -1545072419
-      Architect_Idle_Animation_4: 432216328
+      Character_Walk_Animation_0: 1615896907
+      Character_Walk_Animation_1: -1232809711
+      Character_Walk_Animation_2: -729115395
+      Character_Walk_Animation_3: -1258927815
+      Character_Walk_Animation_4: 195403205
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

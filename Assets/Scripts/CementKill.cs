@@ -13,8 +13,6 @@ public class CementKill : MonoBehaviour
             SpawnHere = new Vector2(collision.transform.position.x, collision.transform.position.y);
             Instantiate(CementSpawn, SpawnHere, collision.transform.rotation);
             Destroy(collision.gameObject);
-
-            Debug.Log("Cimento Hit");
         }
     }
 }

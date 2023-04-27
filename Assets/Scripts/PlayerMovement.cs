@@ -35,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
         cementCount = 0;
         sandCount = 0;
         waterCount = 0;
+
+        animator.SetBool("IsCrouch", false);
+        animator.SetBool("IsWalking", false);
     }
 
     void Update()
@@ -42,11 +45,13 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         //recebe o input do player
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             jump = true;
             crouch = false;
             animator.SetBool("IsCrouch", false);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -54,6 +59,20 @@ public class PlayerMovement : MonoBehaviour
             jump = false;
             crouch = true;
             animator.SetBool("IsCrouch", true);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsJumping", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.D))
+        {
+            animator.SetBool("IsWalking", true);
+            animator.SetBool("IsJumping", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetKey(KeyCode.Escape))
