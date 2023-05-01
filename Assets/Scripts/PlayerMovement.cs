@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     public Collider2D circleCollider;
     Animator animator;
 
+    bool LastAnimation;
+
     void Start()
     {
         PauseMenu.SetActive(false);
@@ -159,6 +161,8 @@ public class PlayerMovement : MonoBehaviour
             cementCount = 0;
             sandCount = 0;
             waterCount = 0;
+
+            animator.SetBool("IsHit", true);
         }
     }
 
@@ -182,6 +186,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Faucet"))
         {
             boxCollider.isTrigger = false;
+        }
+        if (other.gameObject.CompareTag("Architect"))
+        {
+            animator.SetBool("IsHit", false);
         }
     }
 
