@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
-            cementCount = cementCount + 10f;
+            cementCount = cementCount + 50f;
             Destroy(other.gameObject);
         }
 
@@ -127,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
         {
             boxCollider.isTrigger = false;
             circleCollider.isTrigger = false;
-            sandCount = sandCount + 10f;
+            sandCount = sandCount + 40f;
             Destroy(other.gameObject);
         }
 
@@ -140,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(waterCount > 0 && sandCount > 0)
             {
-                cementCount = cementCount + 10f;
+                cementCount = cementCount + 30f;
                 waterCount = 0;
                 sandCount = 0;
             }
@@ -157,12 +157,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Architect"))
         {
-            brickCount = 0;
-            cementCount = 0;
-            sandCount = 0;
-            waterCount = 0;
-
-            animator.SetBool("IsHit", true);
+            if(brickCount > 0)
+            {
+                brickCount = brickCount - 1;
+                animator.SetBool("IsHit", true);
+            }
         }
     }
 
