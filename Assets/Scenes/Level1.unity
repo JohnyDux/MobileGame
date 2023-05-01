@@ -1188,6 +1188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 179751343}
+  CanvasActive: 0
 --- !u!1 &101317282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,6 +2993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645425858}
   - component: {fileID: 645425859}
+  - component: {fileID: 645425860}
   m_Layer: 0
   m_Name: Betoneira
   m_TagString: Betoneira
@@ -3007,7 +3009,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645425857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 905.4, y: 294, z: 0}
+  m_LocalPosition: {x: 565, y: 565, z: 0}
   m_LocalScale: {x: 12.765, y: 12.765, z: 12.765}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3042,6 +3044,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5958843, y: 4.51}
   m_EdgeRadius: 0
+--- !u!95 &645425860
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645425857}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f2d43b85cd36784681d86001ed0c49e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &682925428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3155,6 +3178,7 @@ MonoBehaviour:
   TimesHitPlayer: 0
   anim: {fileID: 694705837}
   player: {fileID: 1796949111}
+  Life: 100
 --- !u!61 &694705839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3241,7 +3265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694705836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 655.8, y: 92.7, z: 0}
+  m_LocalPosition: {x: 873, y: 92.7, z: 0}
   m_LocalScale: {x: -8.6871195, y: 8.909958, z: 8.909958}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6046,6 +6070,7 @@ MonoBehaviour:
   TimesHitPlayer: 0
   anim: {fileID: 1753370173}
   player: {fileID: 1796949111}
+  Life: 100
 --- !u!95 &1753370173
 Animator:
   serializedVersion: 5
@@ -7039,7 +7064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958904673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 557.1613, y: 247.80466, z: -10}
+  m_LocalPosition: {x: 557.1675, y: 247.80466, z: -10}
   m_LocalScale: {x: 1, y: 15.276, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
