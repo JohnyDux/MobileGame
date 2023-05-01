@@ -77,14 +77,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if(Pause == false)
             {
                 PauseGame();
             }  
 
-            else
+            else if(Pause == true)
             {
                 ResumeGame();
             }
