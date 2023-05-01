@@ -8,6 +8,14 @@ public class ArchitectAttack : MonoBehaviour
     public Animator anim;
     public PlayerMovement player;
     public int Life = 100;
+
+    private void Update()
+    {
+        if(Life <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -18,7 +26,8 @@ public class ArchitectAttack : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Cement"))
         {
-            Life -= 10;
+            Life -= 40;
+            Destroy(collision.gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
