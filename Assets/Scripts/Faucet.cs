@@ -7,8 +7,16 @@ public class Faucet : MonoBehaviour
 {
     public int waterIncrement;
 
-    public void AddWater(int value)
+    public Animator animator;
+
+    public void OnTriggerExit2D(Collider2D collision)
     {
-        waterIncrement = +value;
+        if (collision.gameObject.CompareTag("Player"))
+            animator.SetBool("GiveWater", false);
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+            animator.SetBool("GiveWater", true);
     }
 }
