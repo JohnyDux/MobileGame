@@ -18,12 +18,12 @@ public class BarrierKill : MonoBehaviour
         {
             Number_Collisions = Number_Collisions + 1;
 
-            if (Number_Collisions > 10)
+            if (Number_Collisions > 50)
             {
                 Destroy(gameObject);
             }
 
-            if (Number_Collisions > 5)
+            if (Number_Collisions > 25)
             {
                 spriteTexture.sprite = damagedBrick;
             }
