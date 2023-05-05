@@ -7,7 +7,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public PlayerController controller;
 
+    public MainMenu menu;
+
     public Faucet faucet;
+
+    public Slider volumeSlider;
 
     public float runSpeed = 40f;
 
@@ -28,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public Collider2D circleCollider;
     Animator animator;
 
-    bool LastAnimation;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -40,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsCrouch", false);
         animator.SetBool("IsWalking", false);
+
+        audioSource.volume = 0.218f;
+
+        volumeSlider.value = 100f;
     }
 
     void Update()
@@ -89,6 +97,8 @@ public class PlayerMovement : MonoBehaviour
                 ResumeGame();
             }
         }
+
+        audioSource.volume = volumeSlider.value;
     }
 
     void FixedUpdate()
@@ -194,17 +204,21 @@ public class PlayerMovement : MonoBehaviour
 
     void PauseGame()
     {
-        Time.timeScale = 0f;
-        Debug.Log("Set Pause");
+        menu.PauseGame();
         Pause = true;
         PauseMenu.SetActive(true);
+        audioSource.Pause();
+
+        Debug.Log("Pause");
     }
 
     void ResumeGame()
     {
-        Time.timeScale = 1.0f;
-        Debug.Log("Set Resume");
+        menu.ResumeGame();
         Pause = false;
         PauseMenu.SetActive(false);
+        audioSource.Play();
+
+        Debug.Log("Resume");
     }
 }
