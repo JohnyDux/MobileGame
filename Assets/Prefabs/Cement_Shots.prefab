@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9081388193885162979}
   m_Layer: 3
   m_Name: Cement_Shots
-  m_TagString: Cement
+  m_TagString: Cement_Shots
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
