@@ -13,6 +13,7 @@ TagManager:
   - Betoneira
   - Brick_Mold
   - Architect
+  - Cement_Shots
   layers:
   - Default
   - TransparentFX
