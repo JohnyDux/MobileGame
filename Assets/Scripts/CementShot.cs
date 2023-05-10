@@ -18,13 +18,13 @@ public class CementShot : MonoBehaviour
     private void Update()
     {
         FacingRight = player.m_FacingRight;
-        if (FacingRight)
+        if (FacingRight == true)
         {
             speed = speed * 1;
         }
-        else
+        if (FacingRight == false)
         {
-            speed = -speed;
+            speed = -speed * 1;
         }
     }
 }
