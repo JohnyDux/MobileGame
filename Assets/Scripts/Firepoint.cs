@@ -5,22 +5,26 @@ using UnityEngine.UI;
 
 public class Firepoint : MonoBehaviour
 {
-    public GameObject CrosshairImage;
+    public SpriteRenderer CrosshairImage;
     public PlayerMovement scriptRef;
-
+    public float maxRadius;
     void Update()
     {
         if (scriptRef.Pause == true)
         {
-            CrosshairImage.SetActive(false);
+            CrosshairImage.enabled = false;
             Cursor.visible = true;
         }
         else
         {
-            CrosshairImage.SetActive(true);
+            CrosshairImage.enabled = true;
             Cursor.visible = false;
         }
         Vector2 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = mouseCursorPos;
+        if (mouseCursorPos.magnitude > maxRadius)
+        {
+            mouseCursorPos = mouseCursorPos * maxRadius / mouseCursorPos.magnitude;
+        }
+
     }
 }

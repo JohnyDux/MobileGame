@@ -99,6 +99,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         audioSource.volume = volumeSlider.value;
+
+        if (cementCount < 0)
+        {
+            cementCount = 0;
+        }
     }
 
     void FixedUpdate()

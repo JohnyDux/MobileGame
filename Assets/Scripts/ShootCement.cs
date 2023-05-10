@@ -4,52 +4,45 @@ using UnityEngine;
 
 public class ShootCement : MonoBehaviour
 {
-
+    private Camera mainCam;
+    private Vector3 mousePos;
     public GameObject bullet;
-    public Transform firePoint;
-    public float bulletSpeed = 50;
-
-    PlayerMovement player;
-    PlayerController facingRight;
-
-    public Vector2 lookDirection;
-    float lookAngle;
-
-    GameObject bulletClone;
+    public Transform bulletTransform;
+    public bool canFire;
+    private float timer;
+    public float timeBetweenFiring;
+    public PlayerMovement player;
 
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        facingRight = GameObject.Find("Player").GetComponent<PlayerController>();
+        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
     void Update()
     {
-        lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
-        firePoint.rotation = Quaternion.Euler(0, 0, lookAngle);
+        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0) && facingRight.m_FacingRight && player.cementCount > 0)
+        Vector3 rotation = mousePos - transform.position;
+        float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0, 0, rotZ);
+
+        if (!canFire)
         {
-            bulletClone = Instantiate(bullet);
-            bulletClone.transform.position = firePoint.position;
-            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
-
-            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
-
-            player.cementCount = player.cementCount - 10;
+            timer += Time.deltaTime;
+            if(timer > timeBetweenFiring)
+            {
+                canFire = true;
+                timer = 0;
+            }
         }
 
-        if (Input.GetMouseButtonDown(0) && !facingRight.m_FacingRight && (player.cementCount > 0))
+        if(Input.GetMouseButton(0) && canFire && player.cementCount>0)
         {
-            bulletClone = Instantiate(bullet);
-            bulletClone.transform.position = firePoint.position;
-            bulletClone.transform.rotation = Quaternion.Euler(0, 0, lookAngle);
-
-            bulletClone.GetComponent<Rigidbody2D>().velocity = -firePoint.right * bulletSpeed;
-
-            player.cementCount = player.cementCount - 10;
+            canFire = false;
+            Instantiate(bullet, bulletTransform.position,transform.rotation);
+            player.cementCount=player.cementCount-3;
         }
     }
 }
