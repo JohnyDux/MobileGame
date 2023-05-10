@@ -178,6 +178,11 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("IsHit", true);
             }
         }
+
+        if (other.gameObject.CompareTag("Ground_Impact"))
+        {
+            animator.SetBool("GroundImpact", true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)

@@ -11,6 +11,11 @@ public class ArchitectAttack : MonoBehaviour
     [Range(0f, 100f)] public float Life = 100;
     public Image LifeSlider;
 
+    private void Start()
+    {
+        StartCoroutine(FillLife());
+    }
+
     private void Update()
     {
         LifeSlider.fillAmount = Life/100;
@@ -18,7 +23,19 @@ public class ArchitectAttack : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        FillLife();
     }
+
+    IEnumerator FillLife()
+    {
+        if(Life < 100)
+        {
+            Life++;
+        }
+        yield return new WaitForSeconds(5);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -29,7 +46,7 @@ public class ArchitectAttack : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Cement_Shots"))
         {
-            Life -= 40;
+            Life = Life-5;
             Destroy(collision.gameObject);
         }
     }

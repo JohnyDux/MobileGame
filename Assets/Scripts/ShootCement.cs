@@ -38,7 +38,7 @@ public class ShootCement : MonoBehaviour
             }
         }
 
-        if(Input.GetMouseButton(0) && canFire && player.cementCount>0)
+        if(Input.GetMouseButtonDown(0) && canFire && player.cementCount>0)
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position,transform.rotation);

@@ -14,6 +14,7 @@ TagManager:
   - Brick_Mold
   - Architect
   - Cement_Shots
+  - Ground_Impact
   layers:
   - Default
   - TransparentFX
