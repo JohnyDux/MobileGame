@@ -10,5 +10,9 @@ public class PrefabKiller : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.CompareTag("Cement_Shots"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

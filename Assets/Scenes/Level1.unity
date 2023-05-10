@@ -6475,7 +6475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CrosshairImage: {fileID: 1755655610}
   scriptRef: {fileID: 1796949111}
-  maxRadius: 1
+  maxRadius: 0
 --- !u!4 &1755655609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8195058020505473121, guid: 546413cf57ea2a0418971a71f07d1829, type: 3}
@@ -6517,7 +6517,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.5892029, y: 21.454758}
+  m_Offset: {x: 2.3410645, y: 21.454758}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6528,7 +6528,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 808.3343, y: 43.909515}
+  m_Size: {x: 1322.4121, y: 43.909515}
   m_EdgeRadius: 0
 --- !u!4 &1782152016
 Transform:
@@ -7291,7 +7291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958904673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 589.7023, y: 292.5862, z: -10}
+  m_LocalPosition: {x: 589.7735, y: 292.58627, z: -10}
   m_LocalScale: {x: 1, y: 15.276, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
