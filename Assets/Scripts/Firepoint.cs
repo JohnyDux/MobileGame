@@ -13,10 +13,12 @@ public class Firepoint : MonoBehaviour
         if (scriptRef.Pause == true)
         {
             CrosshairImage.SetActive(false);
+            Cursor.visible = true;
         }
         else
         {
             CrosshairImage.SetActive(true);
+            Cursor.visible = false;
         }
         Vector2 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mouseCursorPos;
