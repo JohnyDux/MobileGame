@@ -41,15 +41,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 21
         value: -1991.1
-        inSlope: -172.95714
-        outSlope: -172.95714
+        inSlope: -280.4571
+        outSlope: -280.4571
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 23
-        value: -2711
+        value: -3707
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -159,15 +159,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 21
         value: -1991.1
-        inSlope: -172.95714
-        outSlope: -172.95714
+        inSlope: -280.4571
+        outSlope: -280.4571
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 23
-        value: -2711
+        value: -3707
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -212,4 +212,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 23
+    functionName: PlayGame
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

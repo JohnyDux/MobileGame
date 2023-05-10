@@ -8,9 +8,11 @@ public class BetoneiraMakingCement : MonoBehaviour
     public PlayerMovement player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.CompareTag("Player") && player.waterCount > 0 && player.sandCount > 0)
         {
             anim.SetBool("MakeCement", true);
+            Debug.Log("Tens areia para esta merda");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

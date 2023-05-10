@@ -17,12 +17,21 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         Canvas.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0.0f;
         Canvas.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    public void LoadCutscene()
+    {
+        SceneManager.LoadScene("Introduction Scene");
     }
 
     public void LoadMainMenu()

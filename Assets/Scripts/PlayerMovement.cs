@@ -208,8 +208,6 @@ public class PlayerMovement : MonoBehaviour
         Pause = true;
         PauseMenu.SetActive(true);
         audioSource.Pause();
-
-        Debug.Log("Pause");
     }
 
     void ResumeGame()
@@ -218,7 +216,5 @@ public class PlayerMovement : MonoBehaviour
         Pause = false;
         PauseMenu.SetActive(false);
         audioSource.Play();
-
-        Debug.Log("Resume");
     }
 }
