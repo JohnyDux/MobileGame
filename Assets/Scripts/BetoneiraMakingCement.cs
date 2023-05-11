@@ -45,6 +45,8 @@ public class BetoneiraMakingCement : MonoBehaviour
             else
             {
                 player.cementCount = player.cementCount + 30;
+                player.waterCount = 0;
+                player.sandCount = 0;     
             }
             
             anim.SetBool("MakeCement", false);

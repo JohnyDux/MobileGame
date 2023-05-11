@@ -8318,6 +8318,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1868109897}
     - target: {fileID: 8195058021708431265, guid: 546413cf57ea2a0418971a71f07d1829, type: 3}
+      propertyPath: sandCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195058021708431265, guid: 546413cf57ea2a0418971a71f07d1829, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 357016610}
