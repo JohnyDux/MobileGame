@@ -119,7 +119,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Brick"))
         {
-            // Add the brick to the player's count and destroy the brick GameObject
             brickCount=brickCount+1;
             Destroy(other.gameObject);
         }

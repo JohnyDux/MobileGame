@@ -80,6 +80,8 @@ MonoBehaviour:
   bulletTransform: {fileID: 601610014036074879, guid: 8ea92ca91f12b9341a366467943e1a29, type: 3}
   canFire: 0
   timeBetweenFiring: 0
+  player: {fileID: 8195058021708431265}
+  controller: {fileID: 8195058021708431269}
 --- !u!1 &8195058019759044628
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Firepoint : MonoBehaviour
         else
         {
             CrosshairImage.enabled = true;
-            Cursor.visible = false;
+            Cursor.visible = true;
         }
         Vector2 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (mouseCursorPos.magnitude > maxRadius)

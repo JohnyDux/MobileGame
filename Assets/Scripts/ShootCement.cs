@@ -12,6 +12,7 @@ public class ShootCement : MonoBehaviour
     private float timer;
     public float timeBetweenFiring;
     public PlayerMovement player;
+    public PlayerController controller;
 
     void Start()
     {
@@ -40,9 +41,18 @@ public class ShootCement : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && canFire && player.cementCount>0)
         {
-            canFire = false;
-            Instantiate(bullet, bulletTransform.position,transform.rotation);
-            player.cementCount=player.cementCount-3;
+            if(controller.m_FacingRight == true)
+            {
+                canFire = false;
+                Instantiate(bullet, bulletTransform.position, transform.rotation);
+                player.cementCount = player.cementCount - 3;
+            }
+            if (controller.m_FacingRight == false)
+            {
+                canFire = false;
+                Instantiate(bullet,bulletTransform.position, transform.rotation);
+                player.cementCount = player.cementCount - 3;
+            }
         }
     }
 }
