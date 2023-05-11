@@ -11,7 +11,8 @@ public class BetoneiraMakingCement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            anim.SetBool("MakeCement", true);
+            if (player.waterCount > 0 && player.sandCount > 0)
+                anim.SetBool("MakeCement", true);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
