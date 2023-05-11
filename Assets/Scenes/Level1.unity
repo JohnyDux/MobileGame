@@ -945,8 +945,8 @@ GameObject:
   - component: {fileID: 101317285}
   - component: {fileID: 101317284}
   - component: {fileID: 101317286}
-  - component: {fileID: 101317288}
   - component: {fileID: 101317287}
+  - component: {fileID: 101317288}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Betoneira
@@ -3162,6 +3162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 645425858}
   - component: {fileID: 645425860}
+  - component: {fileID: 645425861}
   m_Layer: 0
   m_Name: BetoneiraPlaceHolder
   m_TagString: Betoneira
@@ -3207,6 +3208,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &645425861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645425857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f957c57683a5846925c47fbbb13968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 101317286}
 --- !u!1001 &682925428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7170,7 +7184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958904673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 589.6504, y: 292.58615, z: -10}
+  m_LocalPosition: {x: 589.6501, y: 292.58615, z: -10}
   m_LocalScale: {x: 1, y: 15.276, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
