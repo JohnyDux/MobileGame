@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b048863f763ac17419aac93ceb7b1721
-      internalID: 220087867
+      spriteID: aefc10144a548db4fb81747db16abdf9
+      internalID: -1851366938
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb1d34a34aba2f429b9b573f64bdda0
-      internalID: 1595948832
+      spriteID: b14f4bf3bd75ff1409c4b939a163287f
+      internalID: 1305834574
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 784ac1c6a6b366c41b984a8a3cac99a9
-      internalID: -473553121
+      spriteID: bc72f2e8a3ffb0345893db5dfd269be6
+      internalID: -1447721669
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512361ad74698a6419f6f6caac9455c5
-      internalID: 397155145
+      spriteID: 84a6ca6cafad89d44bf73aa4bab4fe61
+      internalID: 1343748525
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9712a3953ea6e4f44901b08be0cdf4e3
-      internalID: -1268540836
+      spriteID: 6e215e526bf35ba4fb8b9a5056927ae0
+      internalID: -186987970
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e0a0361c3d2a7d48867008a7dbccfd7
-      internalID: 902093806
+      spriteID: 461b2a4cc4e998c4a9e5f618e60bc67e
+      internalID: 1162901012
       vertices: []
       indices: 
       edges: []
@@ -233,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 70271a44812e34f48a4baa24d90b7d71
+    spriteID: 95e23876beb95f54795c1c5984e250c0
     internalID: 0
     vertices: []
     indices: 
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Betoneira_Making_Cement_Animation_0: 220087867
-      Betoneira_Making_Cement_Animation_1: 1595948832
-      Betoneira_Making_Cement_Animation_2: -473553121
-      Betoneira_Making_Cement_Animation_3: 397155145
-      Betoneira_Making_Cement_Animation_4: -1268540836
-      Betoneira_Making_Cement_Animation_5: 902093806
+      Betoneira_Making_Cement_Animation_0: -1851366938
+      Betoneira_Making_Cement_Animation_1: 1305834574
+      Betoneira_Making_Cement_Animation_2: -1447721669
+      Betoneira_Making_Cement_Animation_3: 1343748525
+      Betoneira_Making_Cement_Animation_4: -186987970
+      Betoneira_Making_Cement_Animation_5: 1162901012
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -9,16 +9,27 @@ public class BetoneiraMakingCement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player") && player.waterCount > 0 && player.sandCount > 0)
+        if (collision.gameObject.CompareTag("Player"))
         {
             anim.SetBool("MakeCement", true);
-            Debug.Log("Tens areia para esta merda");
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (player.waterCount > 0 && player.sandCount > 0)
+            {
+                player.waterCount = 0;
+                player.sandCount = 0;
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            player.cementCount = player.cementCount + 30f;
             anim.SetBool("MakeCement", false);
         }
     }

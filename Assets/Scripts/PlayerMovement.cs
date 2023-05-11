@@ -151,16 +151,6 @@ public class PlayerMovement : MonoBehaviour
             waterCount = waterCount + faucet.waterIncrement;
         }
 
-        if (other.gameObject.CompareTag("Betoneira"))
-        {
-            if(waterCount > 0 && sandCount > 0)
-            {
-                cementCount = cementCount + 30f;
-                waterCount = 0;
-                sandCount = 0;
-            }
-        }
-
         if (other.gameObject.CompareTag("Brick_Mold"))
         {
             if(cementCount > 3)
